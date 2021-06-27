@@ -4,13 +4,16 @@ This project is my FinTech homework, incorporating hvPlot, PyViz, Plot.ly, Mapbo
 ---
 ## Instructions
 Within this Project, there are 2 Jupyter Notebooks.  The primary one being the "Dashboard".
- - Rental Analysis (rental_analysis.ipynb)
- - The Dashboard (dashboard.ipynb)
+ - Rental Analysis (`rental_analysis.ipynb`)
+ - The Dashboard (`dashboard.ipynb`)
 
 As the reader/user, all you need do in order to make the most of the dashboard and the analysis within it, is: -  
-1. execute run_dashboard.sh
-2. interact with the Dashboard
+1. Within Jupyter, execute the dashboard
+2. interact with it Dashboard
+3. If you're feeling adventurious you can let bokeh fire up a Tornado web server and present the dashboard as a web page by executing:  
+  `panel serve dashboard.ipynb --log-level debug --show`
 
+---
 ### The Dashboard (primary)
 The dashboard is the main reason for this project and shows some real estate analysis of Toronto from 2001 to 2016. Once it has been served, it shows an hvPlot Panel with a number of tabs, each of which shows a specific category of the analysis, e.g. "yearly market analysis" or "most expensive neighbourhoods". There are 5 tabs in total, with a number of them showing static plots, while others allow one to interact with them, changing inputs.
 
